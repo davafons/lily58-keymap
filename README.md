@@ -9,22 +9,26 @@ Customised QMK Keymap for Lily58 Pro.
 
 ## 📦 Usage
 
-1. Clone QMK Firmware using Git.
-1. In `keyboards/lily58/keymaps` directory, add this repository as a submodule:
+1. Clone `qmk_firmware`
 
 ```console
-git submodule add https://github.com/davafons/lily58-keymap.git davafons
+git clone https://github.com/qmk/qmk_firmware && cd qmk_firmware
 ```
 
-1. Back to the root directory of QMK Firmware.
-1. Compile the keymap using QMK CLI or something you like!
+2. Clone this repository as a submodule
+
+```console
+git submodule add git@github.com:davafons/lily58-keymap /keyboards/lily58/keymaps/davafons
+```
+
+3. Compile the keymap using `qmk` CLI
 
 ```console
 qmk compile -kb lily58 -km davafons
 ```
 
-```console
 make lily58/light:davafons:dfu
+
 ```
 
 ## 🗾 Keymap
@@ -32,6 +36,7 @@ make lily58/light:davafons:dfu
 ### QWERTY
 
 ```
+
 ,-----------------------------------------.                    ,-----------------------------------------.
 | ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  `~  |
 |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -44,11 +49,13 @@ make lily58/light:davafons:dfu
                   | LAlt | LGUI |LOWER | / RAISE /       \Enter \  |Space |BackSP| RAlt |
                   |      |      |      |/       /         \      \ |      |      |      |
                   `----------------------------'           '------''--------------------'
+
 ```
 
 ### LOWER
 
 ```
+
 ,-----------------------------------------.                    ,-----------------------------------------.
 |      | F11  | F12  | F13  | F14  | F15  |                    | F16  | F17  | F18  | F19  | F20  |      |
 |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -61,11 +68,13 @@ make lily58/light:davafons:dfu
                    | LAlt | LGUI |LOWER | /RAISE  /       \Enter \  |Space |BackSP| RAlt |
                    |      |      |      |/       /         \      \ |      |      |      |
                    `----------------------------'           '------''--------------------'
+
 ```
 
 ### RAISE
 
 ```
+
 ,-----------------------------------------.                    ,-----------------------------------------.
 |      | Mute | Vol- | Vol+ | PScr |      |                    |      | Mute | Vol- | Vol+ | PScr |   +  |
 |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -78,11 +87,13 @@ make lily58/light:davafons:dfu
                    | LAlt | LGUI |LOWER | /RAISE  /       \Enter \  |Space |BackSP| RAlt |
                    |      |      |      |/       /         \      \ |      |      |      |
                    `----------------------------'           '------''--------------------'
+
 ```
 
 ### ADJUST
 
 ```
+
 ,-----------------------------------------.                    ,-----------------------------------------.
 |      |      |      |      |      |      |                    |      |      |      |      |      |      |
 |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -95,6 +106,7 @@ make lily58/light:davafons:dfu
                    | LAlt | LGUI |LOWER | /RAISE  /       \Enter \  |Space |BackSP| RGUI |
                    |      |      |      |/       /         \      \ |      |      |      |
                    `----------------------------'           '------''--------------------'
+
 ```
 
 ## 🗾 Japanese Input Keys
