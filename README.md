@@ -13,7 +13,7 @@ Customised QMK Keymap for Lily58 Pro.
 1. In `keyboards/lily58/keymaps` directory, add this repository as a submodule:
 
 ```console
-git submodule add https://github.com/siketyan/lily58-keymap.git davafons
+git submodule add https://github.com/davafons/lily58-keymap.git davafons
 ```
 
 1. Back to the root directory of QMK Firmware.
