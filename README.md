@@ -56,13 +56,13 @@ Customised QMK Keymap for Lily58 Pro.
 ### RAISE
 ```
 ,-----------------------------------------.                    ,-----------------------------------------.
-|      | Mute | Vol- | Vol+ | PScr |      |                    |      | Mute | Vol- | Vol+ | PScr |      |
+|      | Mute | Vol- | Vol+ | PScr |      |                    |      | Mute | Vol- | Vol+ | PScr |   +  |
 |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-|      |   1  |   2  |   3  |   4  |   5  |                    |      | Home | PgDn | PgUp | End  |      |
+|      |   1  |   2  |   3  |   4  |   5  |                    |      | Home | PgDn | PgUp | End  |   -  |
 |------+------+------+------+------+------|                    |------+------+------+------+------+------|
 |      |   6  |   7  |   8  |   9  |   0  |-------.    ,-------|Left  | Down |  Up  |Right |      |      |
 |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
-|      |      |      |      |      |      |-------|    |-------|      |   +  |   -  |   =  |   \  |      |
+|      |      |      |      |      |      |-------|    |-------|Muhen |Henkan|Han/Zen|Kana |   \  |      |
 `-----------------------------------------/       /     \      \-----------------------------------------'
                    | LAlt | LGUI |LOWER | /RAISE  /       \Enter \  |Space |BackSP| RAlt |
                    |      |      |      |/       /         \      \ |      |      |      |
@@ -84,3 +84,13 @@ Customised QMK Keymap for Lily58 Pro.
                    |      |      |      |/       /         \      \ |      |      |      |
                    `----------------------------'           '------''--------------------'
 ```
+
+## 🗾 Japanese Input Keys
+
+The RAISE layer includes Japanese keyboard keys for easy IME control:
+- **Muhen** (無変換): Non-conversion key - `KC_MHEN`
+- **Henkan** (変換): Conversion key - `KC_HENK`
+- **Han/Zen** (半角/全角): Half-width/Full-width toggle
+- **Kana** (かな): Hiragana/Katakana mode - `KC_KANA`
+
+These keys are mapped to the bottom-right section of the RAISE layer for convenient access when typing in Japanese.

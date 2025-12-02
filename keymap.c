@@ -80,13 +80,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 /* RAISE
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * |      | Mute | Vol- | Vol+ | PScr |      |                    |      | Mute | Vol- | Vol+ | PScr |      |
+ * |      | Mute | Vol- | Vol+ | PScr |      |                    |      | Mute | Vol- | Vol+ | PScr |   +  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |   1  |   2  |   3  |   4  |   5  |                    |      | Home | PgDn | PgUp | End  |      |
+ * |      |   1  |   2  |   3  |   4  |   5  |                    |      | Home | PgDn | PgUp | End  |   -  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |   6  |   7  |   8  |   9  |   0  |-------.    ,-------|Left  | Down |  Up  |Right |      |      |
  * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
- * |      |      |      |      |      |      |-------|    |-------|      |   +  |   -  |   =  |   \  |      |
+ * |      |      |      |      |      |      |-------|    |-------|Muhen |Henkan|Han/Zen|Kana |   \  |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | LGUI |LOWER | /RAISE  /       \Enter \  |Space |BackSP| RAlt |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -94,10 +94,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_RAISE] = LAYOUT( \
-  _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_PSCR, _______,                     _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_PSCR, _______, \
-  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______, \
+  _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_PSCR, _______,                     _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_PSCR, KC_PLUS, \
+  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_MINS, \
   _______, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                        KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, \
-  _______, _______, _______, _______, _______, _______,  KC_LPRN, KC_RPRN,  _______, KC_PLUS, KC_MINS, KC_EQL,  KC_BSLS, _______, \
+  _______, _______, _______, _______, _______, _______,  KC_LPRN, KC_RPRN,  KC_MHEN, KC_HENK, KC_ZKHK, KC_KANA, KC_BSLS, _______, \
                              _______, _______, _______,  _______, _______,  _______, _______, _______ \
 ),
 /* ADJUST
