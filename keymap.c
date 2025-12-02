@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |   6  |   7  |   8  |   9  |   0  |-------.    ,-------|Left  | Down |  Up  |Right |      |      |
  * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
- * |      |      |      |      |      |      |-------|    |-------|Muhen |Henkan|Han/Zen|Kana |   \  |      |
+ * |      |      |      |      |      |      |-------|    |-------|Muhen |Henkan| Kana |ZenHan|      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | LGUI |LOWER | /Space  /       \Enter \  |RAISE |BackSP| RAlt |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_PSCR, _______,                     _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_PSCR, KC_PLUS, \
   _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_MINS, \
   _______, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                        KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, \
-  _______, _______, _______, _______, _______, _______,  KC_LPRN, KC_RPRN,  KC_INT5, KC_INT4, KC_LNG5, KC_INT2, KC_BSLS, _______, \
+  _______, _______, KC_INT2, KC_LNG2, KC_LNG3, KC_LNG4,  KC_LPRN, KC_RPRN,  KC_INT5, KC_INT4, KC_LNG5, KC_LNG1, KC_BSLS, _______, \
                              _______, _______, _______,  _______, _______,  _______, _______, _______ \
 ),
 /* ADJUST
