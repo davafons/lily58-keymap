@@ -25,10 +25,7 @@ git submodule add git@github.com:davafons/lily58-keymap /keyboards/lily58/keymap
 
 ```console
 qmk compile -kb lily58 -km davafons
-```
-
 make lily58/light:davafons:dfu
-
 ```
 
 ## 🗾 Keymap
