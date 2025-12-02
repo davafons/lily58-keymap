@@ -1,27 +1,36 @@
 # ⚜️ lily58-keymap
+
 Customised QMK Keymap for Lily58 Pro.
 
 ## 🔗 Links
+
 - [Lily58](https://github.com/kata0510/Lily58)
 - [QMK Firmware](https://github.com/qmk/qmk_firmware)
 
 ## 📦 Usage
+
 1. Clone QMK Firmware using Git.
 1. In `keyboards/lily58/keymaps` directory, add this repository as a submodule:
-   ```console
-   $ git submodule add https://github.com/siketyan/lily58-keymap.git davafons
-   ```
+
+```console
+git submodule add https://github.com/siketyan/lily58-keymap.git davafons
+```
+
 1. Back to the root directory of QMK Firmware.
 1. Compile the keymap using QMK CLI or something you like!
-   ```console
-   $ qmk compile -kb lily58 -km davafons
-   ```
-   ```console
-   $ make lily58/light:davafons:dfu
-   ```
+
+```console
+qmk compile -kb lily58 -km davafons
+```
+
+```console
+make lily58/light:davafons:dfu
+```
 
 ## 🗾 Keymap
+
 ### QWERTY
+
 ```
 ,-----------------------------------------.                    ,-----------------------------------------.
 | ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  `~  |
@@ -36,8 +45,9 @@ Customised QMK Keymap for Lily58 Pro.
                   |      |      |      |/       /         \      \ |      |      |      |
                   `----------------------------'           '------''--------------------'
 ```
- 
+
 ### LOWER
+
 ```
 ,-----------------------------------------.                    ,-----------------------------------------.
 |      | F11  | F12  | F13  | F14  | F15  |                    | F16  | F17  | F18  | F19  | F20  |      |
@@ -54,6 +64,7 @@ Customised QMK Keymap for Lily58 Pro.
 ```
 
 ### RAISE
+
 ```
 ,-----------------------------------------.                    ,-----------------------------------------.
 |      | Mute | Vol- | Vol+ | PScr |      |                    |      | Mute | Vol- | Vol+ | PScr |   +  |
@@ -70,6 +81,7 @@ Customised QMK Keymap for Lily58 Pro.
 ```
 
 ### ADJUST
+
 ```
 ,-----------------------------------------.                    ,-----------------------------------------.
 |      |      |      |      |      |      |                    |      |      |      |      |      |      |
@@ -88,6 +100,7 @@ Customised QMK Keymap for Lily58 Pro.
 ## 🗾 Japanese Input Keys
 
 The RAISE layer includes Japanese keyboard keys for easy IME control:
+
 - **Muhen** (無変換): Non-conversion key - `KC_MHEN`
 - **Henkan** (変換): Conversion key - `KC_HENK`
 - **Han/Zen** (半角/全角): Half-width/Full-width toggle
